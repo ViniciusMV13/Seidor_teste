@@ -3,7 +3,8 @@ import { GetAllDriversService } from "../../services/DriverServices/GetAllDriver
 
 export class GetAllDriversController {
   async handle(req: Request, res: Response) {
-    const { id, name } = req.query;
+    const { id } = req.params;
+    const { name } = req.query;
     const service = new GetAllDriversService();
 
     const drivers = await service.execute(id, name);

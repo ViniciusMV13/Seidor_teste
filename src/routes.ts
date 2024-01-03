@@ -2,7 +2,7 @@ import { Router } from "express"
 
 import { CreateCarController } from "./controllers/CarController/CreateCarController"
 import { GetAllCarsController } from "./controllers/CarController/GetAllCarsController"
-import { DeleteCarController } from "./controllers/CarController/DeleteCarService"
+import { DeleteCarController } from "./controllers/CarController/DeleteCarController"
 import { UpdateCarController } from "./controllers/CarController/UpdateCarController"
 
 import { CreateDriverController } from "./controllers/DriverController/CreateDriverController"

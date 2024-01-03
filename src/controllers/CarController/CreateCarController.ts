@@ -12,7 +12,6 @@ export class CreateCarController {
     if (result instanceof Error) {
       return res.status(400).json(result.message);
     }
-
-    return res.json(result);
+    return res.json(result).status(200);
   }
 }
